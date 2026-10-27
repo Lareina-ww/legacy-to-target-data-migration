@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-10-27T22:07:13.186094+00:00",
+  "customers": {
+    "source_rows": 8,
+    "unique_source_keys": 7,
+    "duplicate_rows": 1,
+    "rejected_rows": 3,
+    "migrated_rows": 4,
+    "missing_values": 1
+  },
+  "transactions": {
+    "source_rows": 10,
+    "unique_source_keys": 9,
+    "duplicate_rows": 1,
+    "rejected_rows": 4,
+    "migrated_rows": 5,
+    "valid_source_total_eur": 3225.74,
+    "target_total_eur": 3225.74,
+    "total_difference_eur": 0.0
+  },
+  "exceptions": {
+    "total": 9
+  },
+  "reconciliation_status": "PASS"
+}

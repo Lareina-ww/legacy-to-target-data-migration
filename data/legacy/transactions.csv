@@ -1,0 +1,12 @@
+legacy_txn_id,legacy_customer_id,transaction_date,amount_eur,status
+T1001,C001,2024-02-01,"1,250.50",completed
+T1002,C002,03/02/2024,275.25,paid
+T1002,C002,03/02/2024,275.25,paid
+T1003,C004,2024/02/05,500.00,settled
+T1004,C005,2024-02-06,99.99,completed
+T1005,C003,2024-02-07,100.00,completed
+T1006,C999,2024-02-08,200.00,completed
+T1007,C001,31/02/2024,75.00,completed
+T1008,C002,2024-02-10,-40.00,completed
+T1009,C004,2024-02-11,"1,100.00",paid
+

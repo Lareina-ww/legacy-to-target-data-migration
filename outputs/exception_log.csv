@@ -1,0 +1,10 @@
+dataset,row_number,business_key,rule,severity,message,action
+customers,4,C002,DUPLICATE_KEY,ERROR,duplicate customer identifier,REJECTED_DUPLICATE
+customers,5,C003,CUSTOMER_VALIDATION,ERROR,missing or invalid email,REJECTED
+customers,8,C006,CUSTOMER_VALIDATION,ERROR,unsupported or invalid date: '31/02/2024',REJECTED
+customers,9,C007,CUSTOMER_VALIDATION,ERROR,unsupported customer status: 'pending',REJECTED
+transactions,4,T1002,DUPLICATE_KEY,ERROR,duplicate transaction identifier,REJECTED_DUPLICATE
+transactions,7,T1005,TRANSACTION_VALIDATION,ERROR,customer was not migrated: 'C003',REJECTED
+transactions,8,T1006,TRANSACTION_VALIDATION,ERROR,customer was not migrated: 'C999',REJECTED
+transactions,9,T1007,TRANSACTION_VALIDATION,ERROR,unsupported or invalid date: '31/02/2024',REJECTED
+transactions,10,T1008,TRANSACTION_VALIDATION,ERROR,amount must be non-negative: '-40.00',REJECTED

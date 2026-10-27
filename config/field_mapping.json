@@ -1,0 +1,73 @@
+{
+  "customers": [
+    {
+      "source": "legacy_customer_id",
+      "target": "customer_id",
+      "required": true,
+      "transformation": "trim and uppercase"
+    },
+    {
+      "source": "full_name",
+      "target": "customer_name",
+      "required": true,
+      "transformation": "trim and collapse whitespace"
+    },
+    {
+      "source": "email",
+      "target": "email",
+      "required": true,
+      "transformation": "trim and lowercase"
+    },
+    {
+      "source": "country_code",
+      "target": "country",
+      "required": true,
+      "transformation": "trim and uppercase ISO alpha-2"
+    },
+    {
+      "source": "created_date",
+      "target": "created_at",
+      "required": true,
+      "transformation": "convert supported formats to YYYY-MM-DD"
+    },
+    {
+      "source": "status",
+      "target": "is_active",
+      "required": true,
+      "transformation": "map active to 1 and inactive to 0"
+    }
+  ],
+  "transactions": [
+    {
+      "source": "legacy_txn_id",
+      "target": "transaction_id",
+      "required": true,
+      "transformation": "trim and uppercase"
+    },
+    {
+      "source": "legacy_customer_id",
+      "target": "customer_id",
+      "required": true,
+      "transformation": "trim and uppercase; validate against migrated customers"
+    },
+    {
+      "source": "transaction_date",
+      "target": "transaction_date",
+      "required": true,
+      "transformation": "convert supported formats to YYYY-MM-DD"
+    },
+    {
+      "source": "amount_eur",
+      "target": "amount_cents",
+      "required": true,
+      "transformation": "remove thousands separators and convert EUR to integer cents"
+    },
+    {
+      "source": "status",
+      "target": "transaction_status",
+      "required": true,
+      "transformation": "map completed, paid, or settled to SETTLED"
+    }
+  ]
+}
+

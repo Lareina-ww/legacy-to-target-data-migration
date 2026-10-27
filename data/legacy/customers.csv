@@ -1,0 +1,10 @@
+legacy_customer_id,full_name,email,country_code,created_date,status
+C001, Alice van Dijk ,ALICE.VANDIJK@example.com,nl,2024-01-15,Active
+C002,Bob de Boer,bob.deboer@example.com,NL,15/01/2024,active
+C002,Bob de Boer,bob.deboer@example.com,NL,15/01/2024,active
+C003,Chen Wei,,cn,2024-01-18,Active
+C004,Daniel Schmidt,daniel.schmidt@example.com,de,01/20/2024,Inactive
+C005,Elena Garcia,ELENA.GARCIA@example.com,es,2024/01/22,Active
+C006,Fatima Noor,fatima.noor@example.com,nl,31/02/2024,Active
+C007,George King,george.king@example.com,uk,2024-01-24,Pending
+
